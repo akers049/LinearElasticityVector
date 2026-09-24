@@ -3,15 +3,14 @@
 # output directory
 run_00
 
-
 # grid dimensions
-200 100
+100 50
 
 # domain dimensions
 2 1
 
 # E, nu
-1.0 0.3
+1.0 0.45
 
 # number gauss points
 2 2

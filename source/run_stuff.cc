@@ -25,9 +25,7 @@ int main (int argc, char** argv)
             << ep.get_n_dofs()
             << std::endl << std::endl;
 
-  // output inital mesh
   ep.output_results (0);
-
   ep.solve_forward_problem();
 
   return(0);

@@ -29,7 +29,6 @@ using namespace dealii;
                 ((i == k) && (j ==l) ? mu : 0.0) + ((i == l) && (j ==k) ? mu : 0.0);
     };
 
-
     double get_energy(Tensor<2, DIM> &grad_u);
     void get_sigma(Tensor<2, DIM> &grad_u, Tensor<2, DIM> &sigma);
 

@@ -3,10 +3,8 @@
 
 #include "Constituitive.h"
 
-
 using namespace dealii;
 
-  inline
   double LinearElastic::get_energy(Tensor<2, DIM> &grad_u)
   {
     double W = 0.0;
@@ -17,7 +15,6 @@ using namespace dealii;
     return W;
   }
 
-  inline
   void LinearElastic::get_sigma(Tensor<2, DIM> &grad_u, Tensor<2, DIM> &sigma)
   {
 

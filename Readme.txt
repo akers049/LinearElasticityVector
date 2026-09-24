@@ -1,9 +1,9 @@
 
 
-By Andy Akerson Aug 3 2022
+By Andy Akerson Aug 3 2022 -- updated Sept 24 2026
 
 This does the linear elasticity for a 2D cantelever using deal.ii
-(here I use version 9.2.0 I think)
+(tested for version 9.6.1)
 
 
 Calling format to compile and run this:
@@ -13,7 +13,7 @@ make
 printf "inputFiles/inputFile_test.in" | ./run_stuff 
 
 
-it will dump some vtk outputs into ./output/run_00/lagrangian_solution/
+it will dump some vtu outputs into ./output/run_00/lagrangian_solution/
 
 Files included:
 

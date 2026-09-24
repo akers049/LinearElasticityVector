@@ -189,9 +189,12 @@ namespace linear_elastic
     }
     else
     {
+      PreconditionJacobi<SparseMatrix<double> > precondition;
+      precondition.initialize(
+          system_matrix, PreconditionJacobi<SparseMatrix<double>>::AdditionalData(.6));
       SolverControl solver_control(dof_handler.n_dofs(), 1e-11);
       SolverCG<> solver(solver_control);
-      solver.solve(system_matrix, present_solution, system_rhs, PreconditionIdentity());
+      solver.solve(system_matrix, present_solution, system_rhs, precondition);
     }
 
     constraints.distribute (present_solution);
